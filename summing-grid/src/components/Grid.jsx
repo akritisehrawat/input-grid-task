@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import Square from './Square';
 import ResultSquare from './ResultSquare';
 
-// const breakpoints = {
-//   tablet: '720px',
-//   mobile: '360px',
-// };
-
 const styles = {
   container: {
     display: 'flex',

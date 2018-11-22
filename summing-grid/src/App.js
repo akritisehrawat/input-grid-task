@@ -1,13 +1,22 @@
 import React, { Component } from 'react';
-import './App.css';
+import Main from './containers/Main';
+
+const styles = {
+  container: {
+    width: '100vw',
+    height: '100vh',
+  },
+};
 
 class App extends Component {
+  componentWillMount() {
+    document.body.style.margin = 0;
+  }
+
   render() {
     return (
-      <div className="App">
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="App" style={styles.container}>
+        <Main />
       </div>
     );
   }
